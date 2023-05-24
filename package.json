@@ -1,5 +1,6 @@
 {
   "name": "untitled",
+  "homepage": "https://warlord56x.github.io/LightsOut-tsx/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +23,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d build",
+    "release": "npm run build && npm run deploy",
+    "serve": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "serve": "^14.2.0"
   }
 }
